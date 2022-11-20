@@ -52,67 +52,31 @@ $(function () {
 
   // Slider 
 
-  $('.annousment_details_carousel').slick({
+  $('.sponer_slider').slick({
       dots: false,
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 5,
       slidesToScroll: 1,
-      dots: true,
-      asNavFor: '.annousment_details_carousel_nav'
+      autoplay: true,
   });
-  $('.annousment_details_carousel_nav').slick({
+
+  $('.engineers_slider').slick({
       dots: false,
-      arrows: false,
-      vertical: true,
-      slidesToShow: 4,
+      arrows: true,
+      nextArrow: '<i class="fas fa-long-arrow-right port_next"></i>',
+      prevArrow: '<i class="fas fa-long-arrow-left port_prev"></i>',
+      slidesToShow: 3,
       slidesToScroll: 1,
-      focusOnSelect: true,
-      verticalSwiping: true,
-      asNavFor: '.annousment_details_carousel',
-      responsive: [
-          {
-              breakpoint: 376,
-              settings: {
-                  slidesToShow: 2
-              }
-          },
-          {
-              breakpoint: 426,
-              settings: {
-                  slidesToShow: 3
-              }
-          },
-          {
-              breakpoint: 576,
-              settings: {
-                  slidesToShow: 4
-              }
-          }
-      ]
+      autoplay: false,
   });
 
-  // Fixed Content 
+  // Nice Scroll 
 
-  var offset = $('.pixel_count').offset().top;
-
-  $(window).on('scroll', function () {
-      var annc_right = $(this).scrollTop();
-      if (annc_right > offset) {
-          $('.accoucement_filter').addClass('accoucement_filter_fix');
-      } else {
-          $('.accoucement_filter').removeClass('accoucement_filter_fix');
-      }
+  $(".niceScroll").niceScroll({
+    cursorborder:"",
+    cursorcolor:"#18A7B9",
+    boxzoom:true
   });
-
-  $(window).on('scroll', function () {
-      var is_right = $(this).scrollTop();
-      if (is_right > offset) {
-          $('.issue_filter').addClass('issue_filter_fix');
-      } else {
-          $('.issue_filter').removeClass('issue_filter_fix');
-      }
-  });
-
-
+  
 
 });

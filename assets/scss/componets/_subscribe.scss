@@ -1,0 +1,49 @@
+/* ==================  subscribe Start  ================== */
+#subscribe{
+    .subscribe_content{
+        text-align: center;
+        padding-bottom: 80px;
+        h2{
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 56px;
+            text-transform: capitalize;
+            color: #313131;
+            padding-bottom: 40px;
+            span{
+                display: block;
+            }
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #6B6B6B;
+            padding: 0 274px 40px 274px;
+        }
+        a{
+            width: 214px;
+            height: 64px;
+            border: 1px solid #18A7B9;
+            text-align: center;
+            line-height: 64px;
+            border-radius: 35px 0 35px 0;
+            @include text(17px, 500, #18A7B9);
+            margin: 0 7px 0 0;
+            @include transition();
+            &:hover{
+                background: #18A7B9;
+                color: #fff;
+                i{
+                    padding-left: 10px;
+                }
+            }
+            i{
+                @include transition();
+            }
+        }    
+    }
+}
+
+/* ==================  subscribe Part End  ================== */

@@ -1,53 +1,101 @@
 /* ============================== Engineers Part Start =================================== */
 #engineers{
     padding-bottom: 180px;
-    .engineers_mem{
-        box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.3);
-        border-radius: 5px;
-        .mem_top{
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            .fa-star{
-                color: #F0BB00;
-            }
-            .fa-list{
-                color: #313131;
-            }
-        }
-        .mem_middle{
-            text-align: center;
-            padding-bottom: 47px;
-            .eng_img{
-                width: 120px;
-                height: 120px;
-                margin: 0 auto;
-            }
-            h5{
-                font-weight: 500;
-                font-size: 24px;
-                line-height: 36px;
-                color: #313131
-            }
-            span{
-                @include text(12px,500,#6B6B6B);
-            }
-        }
-        .mem_bottom{
-            padding-bottom: 60px;
-            ul{
-                text-align: center;
-                li{
-                    a{
-                        @include text(18px,500,#6B6B6B);
-                        @include transition();
-                        &:hover{
-                            color: #18A7B9;
+    .engineers_slider{
+        position: relative;
+        .engineers_item{
+            .engineers_mem{
+                box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.3);
+                border-radius: 5px;
+                .mem_top{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    .fa-star{
+                        color: #F0BB00;
+                    }
+                    .fa-list{
+                        color: #313131;
+                    }
+                }
+                .mem_middle{
+                    text-align: center;
+                    padding-bottom: 47px;
+                    .eng_img{
+                        width: 120px;
+                        height: 120px;
+                        margin: 0 auto;
+                    }
+                    h5{
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #313131
+                    }
+                    span{
+                        @include text(12px,500,#6B6B6B);
+                    }
+                }
+                .mem_bottom{
+                    padding-bottom: 60px;
+                    ul{
+                        text-align: center;
+                        li{
+                            a{
+                                @include text(18px,500,#6B6B6B);
+                                @include transition();
+                                &:hover{
+                                    color: #18A7B9;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
+        .port_next ,
+        .port_prev{
+            position: absolute;
+            bottom: -70px;
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.3);
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            color: #313131;
+            &::before{
+                @include transition();
+            }
+            &:hover{
+                &::before{
+                    background: #18A7B9;
+                    color: #fff;
+                    width: 50px;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+        .port_next{
+            left: 50%;
+            border-radius: 0 65px 65px 0;
+        }
+        .port_prev{
+            left: 45%;
+            border-radius: 65px 0 0 65px; 
+            z-index: 9999;
+        }
     }
+    
 }
 /* ============================== Engineers Part End  =================================== */

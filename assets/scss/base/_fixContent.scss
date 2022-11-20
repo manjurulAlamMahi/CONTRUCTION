@@ -1,29 +1,49 @@
 @import '../mixins/mixins';
 /* ============ Menu Fix Start ============= */
-// .fix_nav{
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     background: rgb(0, 0, 0) !important;
-//     box-shadow: 0 2px 35px rgba(26, 63, 97, 0.5);
-//     z-index: 99999;
-//     .menu_part {
-//         ul{
-//             li{
-//                 a{
-//                     &:hover{
-//                         color: $hover !important;
-//                     }
-//                     &.active{
-//                         color: $hover !important;
-//                         transform: translateY(100%);
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+.fix_nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $hover;
+    box-shadow: 0 2px 35px rgba(24, 166, 185, 0.5);
+    z-index: 99999;
+    padding: 0 0 0 0 !important;
+    animation: topTobottom .3s linear;
+    .logo{
+        a{
+            color: #fff !important;
+        }
+    }
+    .menu_part {
+        ul{
+            li{
+                a{
+                    color: #fff !important;
+                    padding: 15px 10px;
+                    margin-right: 35px;
+                    &:hover{
+                        color: #fff !important;
+                        &::after{
+                            opacity: 100%;
+                            @include transition();
+                        }
+                    }
+                    &::after{
+                        background: #fff !important;
+                    }
+                    &.active{
+                        @include text(18px,600,#fff);
+                        &::after{
+                            opacity: 100%;
+                            @include transition();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /* ============ Menu Fix End ============= */
 
 

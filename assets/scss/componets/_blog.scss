@@ -1,0 +1,61 @@
+/* ============================== CEO Part Start =================================== */
+#blog{
+    padding-bottom: 140px;
+    .blog_content{
+        position: relative;
+        margin-bottom: 30px;
+        img{
+            border-radius: 25px;
+        }
+        .ovrly{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            h6{
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 34px;
+                color: #FFFFFF;
+                padding: 0 0 22px 0;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                padding: 0 0 32px 0;
+            }
+            a{
+                width: 214px;
+                height: 64px;
+                border: 1px solid #fff;
+                text-align: center;
+                line-height: 64px;
+                border-radius: 35px 0 35px 0;
+                @include text(17px, 500, #ffffff);
+                margin: 0 7px 0 0;
+                @include transition();
+                margin: 0 0 0 0;
+                transform: scale(0);
+                @include transition();
+                &:hover{
+                    border: 1px solid #18A7B9;
+                    background: #18A7B9;
+                    color: #fff;
+                }
+            }
+        }
+        &:hover{
+            .ovrly{
+                a{
+                    margin: 0 0 56px 0;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+/* ============================== CEO Part End  =================================== */
