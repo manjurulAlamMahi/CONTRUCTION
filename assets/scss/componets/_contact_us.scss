@@ -1,0 +1,65 @@
+/* ============================== Contact Us Part Start =================================== */
+#contact_us{
+    padding: 80px 0;
+    .contact_form{
+        .input-group{
+            position: relative;
+            .d-on{
+                display: block;
+            }
+            span{
+                position: absolute;
+                top: -10px;
+                left: 18px;
+                padding: 3px 5px;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 15px;
+                color: #6B6B6B;
+                background: #fff;
+                display: none;
+                z-index: 999999999999;
+            }
+            input{
+                background: #F9F9F9;
+                border-radius: 7px;
+                padding: 20px 0 20px 25px;
+                margin-bottom: 20px;
+                &:focus{
+                    background: #FFF;
+                    box-shadow: none;
+                    border-color: #ced4da !important;
+                }
+            }
+            textarea{
+                background: #F9F9F9;
+                border-radius: 7px;
+                padding: 20px 0 20px 25px;
+                margin-bottom: 20px;
+                resize: none;
+                &:focus{
+                    background: #FFF;
+                    box-shadow: none;
+                    border-color: #ced4da !important;
+                }
+            }
+        } 
+        button{
+            width: 214px;
+            height: 64px;
+            border: 1px solid #18A7B9;
+            text-align: center;
+            line-height: 64px;
+            border-radius: 35px 0 35px 0;
+            @include text(17px, 500, #18A7B9);
+            margin: 0 7px 0 0;
+            @include transition();
+            background: #fff;
+            &:hover{
+                background: #18A7B9;
+                color: #fff;
+            }
+        }
+    }
+}
+/* ============================== Contact Us Part End  =================================== */

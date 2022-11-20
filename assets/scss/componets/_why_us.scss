@@ -1,0 +1,35 @@
+/* ============================== why_us Part Start =================================== */
+#why_us{
+    padding: 140px 0 100px 0;
+    .us_left{
+        padding-top: 22px;
+        padding-left: 22px;
+        p{
+            @include text(18px,400,#6B6B6B);
+            line-height: 28px;
+            padding-bottom: 30px; 
+        }
+        a{
+            width: 214px;
+            height: 64px;
+            border: 1px solid #18A7B9;
+            text-align: center;
+            line-height: 64px;
+            border-radius: 35px 0 35px 0;
+            @include text(17px, 500, #18A7B9);
+            margin: 0 7px 0 0;
+            @include transition();
+            &:hover{
+                background: #18A7B9;
+                color: #fff;
+            }
+        }
+    }
+    .us_right{
+        h3{
+            @include text(54px,500,#313131);
+            line-height: 65px;
+        }
+    }
+}
+/* ============================== why_us Part End  =================================== */

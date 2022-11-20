@@ -1,0 +1,94 @@
+/* ============================== Banner Part Start =================================== */
+#banner{
+    padding-top: 70px;
+    .banner_text{
+        h1{
+            @include text(64px, 700, #18A7B9);
+            line-height: 77px;
+            letter-spacing: -0.04em;
+            span{
+                color: #313131;
+            }
+            margin-bottom: 40px;
+        }
+        p{
+            @include text(18px, 400, #6B6B6B);
+            line-height: 28px;
+            margin-bottom: 40px;
+        }
+        a{
+            width: 214px;
+            height: 64px;
+            border: 1px solid #18A7B9;
+            text-align: center;
+            line-height: 64px;
+            border-radius: 35px 0 35px 0;
+            @include text(17px, 500, #18A7B9);
+            margin: 0 7px 0 0;
+            @include transition();
+            &:hover{
+                background: #18A7B9;
+                color: #fff;
+            }
+        }
+    }
+    .count{
+        display: flex;
+        padding-top: 100px;
+        justify-content: space-between;
+        position: relative;
+        .count_item{
+            position: relative;
+            h6{
+                @include text(40px, 500, #313131);
+            }
+            span{
+                @include text(20px, 400, #6B6B6B);
+            }
+            z-index: 1;
+            .ovrly{
+                position: absolute;
+                width: 40px;
+                height: 25px;
+                left: -15px;
+                top: 0;
+                transform: rotate(-53.53deg);
+                border-radius: 50px 50px 0 0;
+                z-index: -1;
+            }
+        }
+        .line{
+            position: absolute;
+            top: -45px;
+            left: -165px;
+            z-index: -1;
+        }
+    }
+}
+
+#banner_image{
+    position: absolute;
+    top: 0;
+    right: 55px;
+    z-index: -1;
+    .banner_img{
+        img{
+            border-radius: 0 0 0 300px;
+            height: 800px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 70px;
+            left: 525px;
+            width: 238px;
+            height: 213px;
+            background: #C9E7FF;
+            border-radius: 100px 0 0 0;
+            z-index: -1;
+            opacity: 50%;
+
+        }
+    }
+}
+/* ============================== Banner Part End  =================================== */

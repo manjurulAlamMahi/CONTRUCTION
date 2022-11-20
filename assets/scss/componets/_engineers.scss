@@ -1,0 +1,53 @@
+/* ============================== Engineers Part Start =================================== */
+#engineers{
+    padding-bottom: 180px;
+    .engineers_mem{
+        box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.3);
+        border-radius: 5px;
+        .mem_top{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            .fa-star{
+                color: #F0BB00;
+            }
+            .fa-list{
+                color: #313131;
+            }
+        }
+        .mem_middle{
+            text-align: center;
+            padding-bottom: 47px;
+            .eng_img{
+                width: 120px;
+                height: 120px;
+                margin: 0 auto;
+            }
+            h5{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                color: #313131
+            }
+            span{
+                @include text(12px,500,#6B6B6B);
+            }
+        }
+        .mem_bottom{
+            padding-bottom: 60px;
+            ul{
+                text-align: center;
+                li{
+                    a{
+                        @include text(18px,500,#6B6B6B);
+                        @include transition();
+                        &:hover{
+                            color: #18A7B9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================== Engineers Part End  =================================== */

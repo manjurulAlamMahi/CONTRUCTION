@@ -1,0 +1,41 @@
+/* ============================== CEO Part Start =================================== */
+#ceo{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 302px 292px;
+    .ceo_header{
+        text-align: center;
+        h6{
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 76px;
+            color: #FAFAFA;
+        }
+    }
+    .ceo_body{
+        position: relative;
+        .icon1{
+            position: absolute;
+            top: -15px;
+            left: -80px;
+        }
+        .icon2{
+            position: absolute;
+            bottom: -70px;
+            right: -60px;
+        }
+        p{
+            padding: 30px 0 0 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #FAFAFA;
+            span{
+                display: block;
+                padding-top: 50px;
+            }
+        }
+    }
+}
+/* ============================== CEO Part End  =================================== */

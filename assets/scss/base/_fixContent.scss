@@ -1,0 +1,50 @@
+@import '../mixins/mixins';
+/* ============ Menu Fix Start ============= */
+// .fix_nav{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     background: rgb(0, 0, 0) !important;
+//     box-shadow: 0 2px 35px rgba(26, 63, 97, 0.5);
+//     z-index: 99999;
+//     .menu_part {
+//         ul{
+//             li{
+//                 a{
+//                     &:hover{
+//                         color: $hover !important;
+//                     }
+//                     &.active{
+//                         color: $hover !important;
+//                         transform: translateY(100%);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+/* ============ Menu Fix End ============= */
+
+
+/* ============ BAck to top button css Start ============= */
+.backtotop{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $hover;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    display: none;
+}
+.fix_backtotop{
+    z-index: 9999;
+}
+/* ============ BAck to top button css End ============= */
+

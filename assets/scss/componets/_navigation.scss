@@ -1,0 +1,53 @@
+/* ============================== Menu Part Start =================================== */
+#main_menu{
+    padding: 20px 0 !important;
+    position: relative;
+    z-index: 999999;
+    .logo{
+        a{
+            @include text(25px, 600, #18A7B9);
+            letter-spacing: -0.06em;
+        }
+    }
+    .menu_part{
+        justify-content: end !important;
+        ul{
+            li{
+                a{
+                    
+                    position: relative;
+                    @include text(18px,400,#313131);
+                    line-height: 27px;
+                    padding: 0;
+                    margin-right: 35px;
+                    &:hover{
+                        @include text(18px,600,#313131);
+                        &::after{
+                            opacity: 100%;
+                            @include transition();
+                        }
+                    }
+                    &::after{
+                        opacity: 0;
+                        position: absolute;
+                        content: '';
+                        width: 4px;
+                        height: 4px;
+                        background: #313131;
+                        bottom: 0;
+                        left: 50%;
+                    }
+                    &.active{
+                        @include text(18px,600,#313131);
+                        &::after{
+                            opacity: 100%;
+                            @include transition();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================== Menu Part End =================================== */
+

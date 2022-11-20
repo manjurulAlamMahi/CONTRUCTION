@@ -1,0 +1,560 @@
+/* ==================  Font Part Start  ================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  src: url(../font_digital_serial_bold/Digital-Serial-Bold.ttf);
+  font-family: "digital-serial-bold", sans-serif;
+}
+/* ==================  Common Part Start  ================== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.common_head {
+  text-align: center;
+  padding-bottom: 80px;
+}
+.common_head h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 56px;
+  color: #313131;
+  padding-bottom: 30px;
+}
+.common_head p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #6B6B6B;
+  padding: 0px 218px;
+}
+
+/* ==================  Common Part End  ================== */
+/* ============ Menu Fix Start ============= */
+/* ============ Menu Fix End ============= */
+/* ============ BAck to top button css Start ============= */
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #dc3545;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+.fix_backtotop {
+  z-index: 9999;
+}
+
+/* ============ BAck to top button css End ============= */
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes topTobottom {
+  from {
+    transform: translateY(-75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes topTobottom {
+  from {
+    transform: translateY(-75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* ============================== Menu Part Start =================================== */
+#main_menu {
+  padding: 20px 0 !important;
+  position: relative;
+  z-index: 999999;
+}
+#main_menu .logo a {
+  font-size: 25px;
+  font-weight: 600;
+  color: #18A7B9;
+  letter-spacing: -0.06em;
+}
+#main_menu .menu_part {
+  justify-content: end !important;
+}
+#main_menu .menu_part ul li a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: #313131;
+  line-height: 27px;
+  padding: 0;
+  margin-right: 35px;
+}
+#main_menu .menu_part ul li a:hover {
+  font-size: 18px;
+  font-weight: 600;
+  color: #313131;
+}
+#main_menu .menu_part ul li a:hover::after {
+  opacity: 100%;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#main_menu .menu_part ul li a::after {
+  opacity: 0;
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #313131;
+  bottom: 0;
+  left: 50%;
+}
+#main_menu .menu_part ul li a.active {
+  font-size: 18px;
+  font-weight: 600;
+  color: #313131;
+}
+#main_menu .menu_part ul li a.active::after {
+  opacity: 100%;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+/* ============================== Menu Part End =================================== */
+/* ============================== Banner Part Start =================================== */
+#banner {
+  padding-top: 70px;
+}
+#banner .banner_text h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #18A7B9;
+  line-height: 77px;
+  letter-spacing: -0.04em;
+  margin-bottom: 40px;
+}
+#banner .banner_text h1 span {
+  color: #313131;
+}
+#banner .banner_text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6B6B6B;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+#banner .banner_text a {
+  width: 214px;
+  height: 64px;
+  border: 1px solid #18A7B9;
+  text-align: center;
+  line-height: 64px;
+  border-radius: 35px 0 35px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #18A7B9;
+  margin: 0 7px 0 0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#banner .banner_text a:hover {
+  background: #18A7B9;
+  color: #fff;
+}
+#banner .count {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+  position: relative;
+}
+#banner .count .count_item {
+  position: relative;
+  z-index: 1;
+}
+#banner .count .count_item h6 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #313131;
+}
+#banner .count .count_item span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #6B6B6B;
+}
+#banner .count .count_item .ovrly {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  left: -15px;
+  top: 0;
+  transform: rotate(-53.53deg);
+  border-radius: 50px 50px 0 0;
+  z-index: -1;
+}
+#banner .count .line {
+  position: absolute;
+  top: -45px;
+  left: -165px;
+  z-index: -1;
+}
+
+#banner_image {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  z-index: -1;
+}
+#banner_image .banner_img img {
+  border-radius: 0 0 0 300px;
+  height: 800px;
+}
+#banner_image .banner_img::after {
+  position: absolute;
+  content: "";
+  top: 70px;
+  left: 525px;
+  width: 238px;
+  height: 213px;
+  background: #C9E7FF;
+  border-radius: 100px 0 0 0;
+  z-index: -1;
+  opacity: 50%;
+}
+
+/* ============================== Banner Part End  =================================== */
+/* ============================== sponser Part Start =================================== */
+#sponser {
+  padding: 100px 0;
+}
+#sponser .sponer_slider {
+  padding: 50px 10px;
+  background: #fafafa;
+  border-radius: 70px;
+}
+
+/* ============================== sponser Part End  =================================== */
+/* ============================== why_us Part Start =================================== */
+#why_us {
+  padding: 140px 0 100px 0;
+}
+#why_us .us_left {
+  padding-top: 22px;
+  padding-left: 22px;
+}
+#why_us .us_left p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6B6B6B;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+#why_us .us_left a {
+  width: 214px;
+  height: 64px;
+  border: 1px solid #18A7B9;
+  text-align: center;
+  line-height: 64px;
+  border-radius: 35px 0 35px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #18A7B9;
+  margin: 0 7px 0 0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#why_us .us_left a:hover {
+  background: #18A7B9;
+  color: #fff;
+}
+#why_us .us_right h3 {
+  font-size: 54px;
+  font-weight: 500;
+  color: #313131;
+  line-height: 65px;
+}
+
+/* ============================== why_us Part End  =================================== */
+/* ============================== About Us Part Start =================================== */
+#about_us {
+  padding: 107px 0 142px 0;
+}
+#about_us .about_us_right {
+  padding-left: 22px;
+}
+#about_us .about_us_right ul li {
+  display: flex;
+  margin-bottom: 142px;
+}
+#about_us .about_us_right ul li:last-child {
+  margin-bottom: 0;
+}
+#about_us .about_us_right ul li .list_sl {
+  width: 76px;
+  height: 76px;
+  border-radius: 5px 38px;
+  position: relative;
+}
+#about_us .about_us_right ul li .list_sl span {
+  font-size: 72px;
+  font-weight: 600;
+  color: #313131;
+  line-height: 72px;
+  text-align: right;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  text-align: center;
+}
+#about_us .about_us_right ul li .list_text {
+  width: 89%;
+}
+#about_us .about_us_right ul li .list_text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6B6B6B;
+  line-height: 28px;
+  padding-left: 67px;
+}
+
+/* ============================== About Us Part End  =================================== */
+/* ============================== Engineers Part Start =================================== */
+#engineers {
+  padding-bottom: 180px;
+}
+#engineers .engineers_mem {
+  box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.3);
+  border-radius: 5px;
+}
+#engineers .engineers_mem .mem_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+#engineers .engineers_mem .mem_top .fa-star {
+  color: #F0BB00;
+}
+#engineers .engineers_mem .mem_top .fa-list {
+  color: #313131;
+}
+#engineers .engineers_mem .mem_middle {
+  text-align: center;
+  padding-bottom: 47px;
+}
+#engineers .engineers_mem .mem_middle .eng_img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+#engineers .engineers_mem .mem_middle h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #313131;
+}
+#engineers .engineers_mem .mem_middle span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6B6B6B;
+}
+#engineers .engineers_mem .mem_bottom {
+  padding-bottom: 60px;
+}
+#engineers .engineers_mem .mem_bottom ul {
+  text-align: center;
+}
+#engineers .engineers_mem .mem_bottom ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6B6B6B;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#engineers .engineers_mem .mem_bottom ul li a:hover {
+  color: #18A7B9;
+}
+
+/* ============================== Engineers Part End  =================================== */
+/* ============================== CEO Part Start =================================== */
+#ceo {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding: 302px 292px;
+}
+#ceo .ceo_header {
+  text-align: center;
+}
+#ceo .ceo_header h6 {
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 76px;
+  color: #FAFAFA;
+}
+#ceo .ceo_body {
+  position: relative;
+}
+#ceo .ceo_body .icon1 {
+  position: absolute;
+  top: -15px;
+  left: -80px;
+}
+#ceo .ceo_body .icon2 {
+  position: absolute;
+  bottom: -70px;
+  right: -60px;
+}
+#ceo .ceo_body p {
+  padding: 30px 0 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FAFAFA;
+}
+#ceo .ceo_body p span {
+  display: block;
+  padding-top: 50px;
+}
+
+/* ============================== CEO Part End  =================================== */
+/* ============================== Contact Us Part Start =================================== */
+#contact_us {
+  padding: 80px 0;
+}
+#contact_us .contact_form .input-group {
+  position: relative;
+}
+#contact_us .contact_form .input-group .d-on {
+  display: block;
+}
+#contact_us .contact_form .input-group span {
+  position: absolute;
+  top: -10px;
+  left: 18px;
+  padding: 3px 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #6B6B6B;
+  background: #fff;
+  display: none;
+  z-index: 999999999999;
+}
+#contact_us .contact_form .input-group input {
+  background: #F9F9F9;
+  border-radius: 7px;
+  padding: 20px 0 20px 25px;
+  margin-bottom: 20px;
+}
+#contact_us .contact_form .input-group input:focus {
+  background: #FFF;
+  box-shadow: none;
+  border-color: #ced4da !important;
+}
+#contact_us .contact_form .input-group textarea {
+  background: #F9F9F9;
+  border-radius: 7px;
+  padding: 20px 0 20px 25px;
+  margin-bottom: 20px;
+  resize: none;
+}
+#contact_us .contact_form .input-group textarea:focus {
+  background: #FFF;
+  box-shadow: none;
+  border-color: #ced4da !important;
+}
+#contact_us .contact_form button {
+  width: 214px;
+  height: 64px;
+  border: 1px solid #18A7B9;
+  text-align: center;
+  line-height: 64px;
+  border-radius: 35px 0 35px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #18A7B9;
+  margin: 0 7px 0 0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  background: #fff;
+}
+#contact_us .contact_form button:hover {
+  background: #18A7B9;
+  color: #fff;
+}
+
+/* ============================== Contact Us Part End  =================================== *//*# sourceMappingURL=style.css.map */
