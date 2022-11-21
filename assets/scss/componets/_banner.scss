@@ -69,7 +69,7 @@
 #banner_image{
     position: absolute;
     top: 0;
-    right: 55px;
+    right: 12px;
     z-index: -1;
     .banner_img{
         img{
@@ -80,11 +80,24 @@
             position: absolute;
             content: '';
             top: 70px;
-            left: 525px;
+            left: 465px;
             width: 238px;
             height: 213px;
             background: #C9E7FF;
             border-radius: 100px 0 0 0;
+            z-index: -1;
+            opacity: 50%;
+
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: -50px;
+            right: 0px;
+            width: 238px;
+            height: 213px;
+            background: #C9E7FF;
+            border-radius: 0 0 100px 0;
             z-index: -1;
             opacity: 50%;
 
