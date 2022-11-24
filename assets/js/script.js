@@ -92,13 +92,6 @@ $(function () {
             slidesToScroll: 1,
           }
         },
-        {
-          breakpoint: 1401,
-          settings: {
-            slidesToShow: 6,
-            slidesToScroll: 1,
-          }
-        },
       ]
   });
 
