@@ -79,19 +79,12 @@ $(function () {
           }
         },
         {
-          breakpoint: 767.98,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          }
-        },
-        {
           breakpoint: 991.98,
           settings: {
             slidesToShow: 4,
             slidesToScroll: 1,
           }
-        },
+        }
       ]
   });
 

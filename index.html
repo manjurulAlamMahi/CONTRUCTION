@@ -353,7 +353,8 @@
                                 <span id="title2">Subject</span>
                             </div>
                             <div class="input-group">
-                                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Massage"></textarea>
+                                <textarea class="form-control klm" name="" id="" cols="30" rows="10" placeholder="Massage"></textarea>
+                                <span id="title3">Massage</span>
                             </div>
                             <button type="submit">Send Massage</button>
                         </form>
@@ -523,6 +524,7 @@
         var input = $(".abc");
         var input1 = $(".efg");
         var input2 = $(".hij");
+        var textarea = $(".klm");
         input.focusin(function() {
             $("#title").addClass("d-on");
         });
@@ -540,6 +542,12 @@
         });
         input2.focusout(function() {
             $("#title2").removeClass("d-on");
+        });
+        textarea.focusin(function() {
+            $("#title3").addClass("d-on");
+        });
+        textarea.focusout(function() {
+            $("#title3").removeClass("d-on");
         });
     </script>
 

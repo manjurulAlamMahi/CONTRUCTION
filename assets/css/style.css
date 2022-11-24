@@ -77,7 +77,7 @@ body {
   width: 100%;
   background: #18A7B9;
   box-shadow: 0 2px 35px rgba(24, 166, 185, 0.5);
-  z-index: 99999;
+  z-index: 999999999999999;
   padding: 0 0 0 0 !important;
   -webkit-animation: topTobottom 0.3s linear;
           animation: topTobottom 0.3s linear;
