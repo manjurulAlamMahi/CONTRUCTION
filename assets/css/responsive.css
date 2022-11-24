@@ -1,21 +1,76 @@
 @media(min-width:1400px) {}
 
-@media(min-width:1200px) and (max-width:1399.98px) {}
+@media(min-width:1200px) and (max-width:1399.98px) {
+    #ceo {
+        padding: 80px 110px;
+    }
+    #ceo .ceo_body .icon1 img,
+    #ceo .ceo_body .icon2 img {
+        width: 50px
+    }
+    #ceo .ceo_body .icon1 {
+        left: -50px;
+    }
+    #ceo .ceo_body .icon2 {
+        bottom: -40px;
+    }
+}
 
-@media(min-width:992px) and (max-width:1100.98px) {}
+@media(min-width:992px) and (max-width:1100.98px) {
+    /* ================================ Banner Part Start ================================  */
+    #banner .count .count_item p {
+        font-size: 16px;
+    }
+    #banner .count .count_item span h6 {
+        font-size: 35px;
+    }
+    #banner .count .line {
+        display: none;
+    }
+    /* ================================ Banner Part End ================================  */
 
-@media(min-width:768px) and (max-width:991.98px) {}
+    /* ================================ ceo Part Start ================================  */
+    #ceo {
+        padding: 40px;
+    }
+    #ceo .ceo_header h6 {
+        font-size: 48px;
+        line-height: inherit;
+        padding: 25px 0 15px 0;
+    }
+    #ceo .ceo_body p {
+        font-size: 18px;
+        padding: 0 0 40px 0px;
+        text-align: center;
+    }
+    #ceo .ceo_body .icon1 img,
+    #ceo .ceo_body .icon2 img {
+        width: 70px
+    }
+    #ceo .ceo_body .icon1 {
+        top: -60px;
+        left: -40px;
+    }
+    #ceo .ceo_body .icon2 {
+        bottom: 0px;
+        right: -40px;
+    }
+    /* ================================ ceo Part End ================================   */
+}
 
-@media(min-width:576px) and (max-width:767.98px) {}
-
-@media(max-width:575.98px) {
-    /* #####################################################
-    #################### INDEX PAGE START ###################
-    ##################################################### */
-    /* Common Css */
+@media(min-width:768px) and (max-width:991.98px) {
+    /* ================================ Common Css ================================== */
+    .common_head {
+        padding-bottom: 0;
+    }
     .common_head h2 {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+    .common_head p {
+        font-size: 14px;
+        padding: 0px 20px;
     }
     .backtotop {
         bottom: 15px;
@@ -25,174 +80,829 @@
         font-size: 20px;
         line-height: 30px;
     }
-
-    /* Header Part */
-    #heading_part .container .heading_left .heading_logo{
-        margin: 0 auto;
-        padding-bottom: 10px;
-    }
-    #heading_part .container .heading_left .heading_logo a img {
-        width: 100px;
-        height: 50px;
-    }
-    /* Navigation Part */
-    #main_menu .navbar-toggler{
+    #main_menu .menu_part ul li a.active {
         color: #fff;
     }
-    #main_menu .navbar-toggler:focus{
-        border: none;
-        box-shadow: none;
+    #main_menu .menu_part ul li a {
+        color: #fff;
     }
-    #main_menu .menu_part{
-        text-align: center !important;
+    #main_menu .menu_part ul li a:hover {
+        color: #fff;
     }
-    /* New Annooucement */
-    #annoucement .annousment_details .annousment_details_carousel .slider_item h4 {
-        font-size: 16px;
+    #main_menu .menu_part ul li a::after {
+        background: #fff;
+        bottom: 0px;
     }
-    #annoucement .annousment_details .annousment_details_carousel .slider_item h6 {
-        font-size: 14px;
+    #main_menu .menu_part ul li a.active::after {
+        background: #fff;
+        bottom: 0px;
     }
-    #annoucement .annousment_details .annousment_details_carousel .slider_item p {
-        font-size: 14px;
-        padding: 5px 0px 0 0;
-        line-height: 20px;
+    #main_menu .logo a {
+        margin-right: 20px;
+        color: #fff;
+    } 
+    /* ================================ Menu Part End ================================  */
+
+    /* ================================ Banner Part Start ================================ */
+    #banner {
+        padding-top: 10px;
     }
-    #annoucement .annousment_details .annousment_details_carousel_nav{
-        margin-top: 35px;
+    #banner .banner_text{
+        text-align: center;
     }
-    #annoucement .annousment_details .annousment_details_carousel_nav  .draggable{
-        height: 275px !important;
+    #banner .banner_text h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 75px;
     }
-    #annoucement .annousment_details .annousment_details_carousel_nav  .draggable .slick-track .slick-cloned{
+    #banner .banner_text p {
+        text-align: center;
+        color: #fff;
+    }
+    #banner .count {
+        display: flex;
+        padding-top: 50px;
+    }
+    #banner .count .count_item {
+    margin-bottom: 10px;
+    }
+    #banner .count .count_item .ovrly {
+        left: -20px;
+    }
+    #banner_image .banner_img img {
+        border-radius: 0 0 0 0;
+    }
+    #banner_image .banner_img::after {
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 0 0 0 0;
+    }
+    #banner_image {
+        right: 0;
+    }
+    #banner_image .banner_img::before {
         display: none;
     }
-    /* Current Issue */
-    #issues .current_vol h3 {
+    #banner .banner_text h1 span {
+        color: #fff;
+    }
+    #banner .count .count_item span h6{
+        color: #fff;
+    }
+    #banner .count .count_item span {
+        color: #fff !important;
+    }
+    #banner .count .count_item p {
+        color: #fff !important;
+    }
+    #banner .banner_text a {
+        width: 138px;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    #banner .banner_text a:hover {
+        border: 1px solid #18A7B9;
+    }
+    #banner .count .line {
+        display: none;
+    }
+    /* ================================ Banner Part End ================================  */
+
+    /* ================================ Spnser Part Start ================================  */
+    #sponser {
+        padding: 70px 0;
+    }
+    /* ================================ Sponser Part End ================================  */
+
+    /* ================================ why_us Part Start ================================ */
+    #why_us {
+        padding: 70px 0;
+    }
+    #why_us .us_right h3 {
+        font-size: 31px;
+        line-height: 44px;
+    }
+    /* ================================ why_us Part End ================================  */
+
+    /* ================================ about_us Part Start ================================  */
+    #about_us {
+        padding: 30px 0 50px 0;
+    }
+    #about_us .about_us_right {
+        padding-left: 13px;
+        padding-top: 50px;
+    }
+    #about_us .about_us_right ul li {
+        margin-bottom: 30px;
+    }
+    #about_us .about_us_right ul li .list_text p {
         font-size: 14px;
+        padding-left: 45px;
     }
-    #issues .current_vol p{
-        font-size: 13px;
-    }
-    #issues .current_vol p span {
-        font-size: 13px;
-    }
-    #issues .current_issues .isuues_item h4 a {
-        font-size: 15px;
-    }
-    #issues .current_issues .isuues_item span{
-        font-size: 15px;
-    }
-    #issues .current_issues .isuues_item span a {
-        font-size: 15px;
-    }
-    #issues .current_issues .isuues_item p {
-        font-size: 13px;
-        font-weight: 400;
-    }
-    #issues .current_issues .isuues_item a {
-        font-size: 12px;
-    }
-    #issues .current_issues .isuues_item a img{
-        width: 10%;
-    }
+    /* ================================ about_us Part End ================================  */
 
-    /* #####################################################
-    #################### INDEX PAGE END ###################
-    ##################################################### */
+    /* ================================ engineers Part Start ================================  */
+    #engineers .engineers_slider .port_prev {
+        left: 42%;
+    }
+    /* ================================ engineers Part End ================================  */
 
-    /* #####################################################
-    #################### EDITORIAL PAGE Start ###################
-    ##################################################### */
-
-    #team .team_card .teamer_info h4 {
+    /* ================================ ceo Part Start ================================  */
+    #ceo {
+        padding: inherit;
+    }
+    #ceo .ceo_header h6 {
+        font-size: 30px;
+        line-height: inherit;
+        padding: 25px 0 15px 0;
+    }
+    #ceo .ceo_body p {
         font-size: 14px;
+        padding: 0 0 40px 0px;
+        text-align: center;
     }
-    #team .team_card .teamer_info span {
-        font-size: 10px;
+    #ceo .ceo_body .icon1,
+    #ceo .ceo_body .icon2 {
+        display: none;
     }
-    #team .team_card .teamer_info p {
-        font-size: 11px;
+    /* ================================ ceo Part End ================================   */
+
+    /* ================================ Contact Part Start ================================ */
+    #contact_us .contact_form{
+        margin-bottom: 30px;
     }
-    #team .team_card .teamer_info {
-        height: 240px;
+    #blog {
+        padding-bottom: 20px;
     }
-    #team .team_card{
-        margin-bottom: 20px;
+    /* ================================ Contact Part End ================================ */
+
+    /* ================================ subscribe part start ================================ */
+    #subscribe .subscribe_content h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
     }
-    #team .team_card .teamer_image .ovrly {
-        width: 100%;
-        height: 100%;
-        transform: translateX(0);
+    #subscribe .subscribe_content p {
+        font-size: 14px;
+        padding: 20px 20px;
     }
-    #team .team_card .teamer_image .ovrly ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        padding-top: 0;
+    /* ================================ subscribe part end ================================ */
+
+    /* ================================ Footer part start ================================ */
+    #footer .footer_main .footer_header h3 {
+        line-height: 0px;
+        text-align: center;
     }
-    #team .team_card .teamer_image .ovrly ul li a {
-        font-size: 13px;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        margin-bottom: 0;
+    #footer .footer_main .footer_body p {
+        text-align: center;
+        padding-right: 0;
     }
-    #otherteam .team_card {
-        width: 100%;
+    #footer .footer_main .footer_bottom ul {
+        padding-top: 20px;
+        justify-content: center;
+        padding-bottom: 20px;
     }
-    #otherteam .team_card .otherteamer_info .details p {
-        width: inherit;
+    #footer .footer_main .footer_header{
+        text-align: center;
+    }
+    #footer .footer_main .footer_header h5 {
+        padding-bottom: 15px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+    #footer .footer_main .footer_header h5::after {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 2px;
+        background: #313131;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #footer .footer_main .footer_body ul{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #footer .footer_main .footer_body ul li {
         padding-bottom: 10px;
     }
-    #otherteam .team_card .otherteamer_info .social {
-        transform: scale(1);
+    #footer .footer_main {
+        padding-bottom: 40px;
     }
-    /* #####################################################
-    #################### EDITORIAL PAGE END ###################
-    ##################################################### */
+    /* ================================ Footer part end ================================ */
+}
 
-    /* #####################################################
-    #################### Annoucement PAGE Start ###################
-    ##################################################### */
-    #annoucements .annoucement_card_box .annoucement_content h4 {
-        font-size: 16px;
+@media(min-width:576px) and (max-width:767.98px) {
+    /* ================================ Common Css ================================== */
+    .common_head {
+        padding-bottom: 0;
     }
-    #annoucements .accoucement_filter{
+    .common_head h2 {
+        font-weight: 600;
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+    .common_head p {
+        font-size: 14px;
+        padding: 0px 20px;
+    }
+    .backtotop {
+        bottom: 15px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /* ================================ Fix Nav CSS ================================ */
+    .fix_nav .navbar-toggler.collapsed {
+        color: #fff !important;
+        margin-left: 10px;
+    }
+    .fix_nav .navbar-toggler {
+        color: #fff !important;
+        margin-left: 10px;
+    }
+    .fix_nav .navbar-toggler:focus {
+        border: 2px solid #fff !important;
+    }
+    .fix_nav .menu_part ul li a::after {
+        background: #313131;
+        bottom: 7px;
+    }
+    .fix_nav .menu_part ul li a {
+        color: #313131 !important;
+    }
+    .fix_nav .menu_part ul li a:hover {
+        color: #313131 !important;
+    }
+    .fix_nav .menu_part ul li a::after{
+        background: #313131 !important;
+    }
+    .fix_nav .menu_part ul li a.active {
+        color: #fff !important;
+    }
+    .fix_nav .menu_part ul li a.active::after {
+        background: #fff !important;
+    }
+    /* ================================ FIx Nav CSS ================================ */
+    #main_menu .navbar-toggler.collapsed {
+        color: #fff;
+        margin-left: 10px;
+    }
+    #main_menu .navbar-toggler {
+        color: #18A7B9;
+        margin-left: 10px;
+    }
+    #main_menu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    #main_menu .menu_part {
+        text-align: center;
+        background: #fff;
+        margin-top: 30px;
+        position: relative;
+    }
+    #main_menu .menu_part::after {
+        position: absolute;
+        content: "";
+        top: -40px;
+        left: 15px;
+        border-bottom: 20px solid #fff;
+        border-top: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+    #main_menu .menu_part ul li a{
+        margin: 0 0 0 0;
+    }
+    #main_menu .menu_part ul li a{
+        padding: 10px 0;
+    }
+    #main_menu .menu_part ul li a.active {
+        background: #18A7B9;
+        color: #fff;
+        padding: 10px 0;
+    }
+    #main_menu .menu_part ul li a::after {
+        background: #313131;
+        bottom: 7px;
+    }
+    #main_menu .menu_part ul li a.active::after {
+        background: #fff;
+        bottom: 7px;
+    }
+    #main_menu .logo a {
+        margin-right: 20px;
+        color: #fff;
+    }
+    /* ================================ Menu Part End ================================  */
+
+    /* ================================ Banner Part Start ================================ */
+    #banner {
+        padding-top: 10px;
+    }
+    #banner .banner_text{
+        text-align: center;
+    }
+    #banner .banner_text {
+        text-align: center;
+    }
+    #banner .banner_text h1 {
+        font-size: 50px;
+        text-align: center;
         margin-bottom: 10px;
+        line-height: 75px;
     }
-    #annoucements .accoucement_filter{
-        animation: none;
+    #banner .banner_text p {
+        text-align: center;
+        color: #fff;
     }
-    #annoucements .paginate .Page .pagination .page-item .page-link {
-        font-size: 10px;
+    #banner .count {
+        display: flex;
+        padding-top: 50px;
     }
+    #banner .count .count_item {
+    margin-bottom: 10px;
+    }
+    #banner .count .count_item .ovrly {
+        left: -20px;
+    }
+    #banner_image .banner_img img {
+        border-radius: 0 0 0 0;
+    }
+    #banner_image .banner_img::after {
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 0 0 0 0;
+    }
+    #banner_image {
+        right: 0;
+    }
+    #banner_image .banner_img::before {
+        display: none;
+    }
+    #banner .banner_text h1 span {
+        color: #fff;
+    }
+    #banner .count .count_item span h6{
+        color: #fff;
+    }
+    #banner .count .count_item span {
+        color: #fff !important;
+    }
+    #banner .count .count_item p {
+        color: #fff !important;
+    }
+    #banner .banner_text a {
+        width: 138px;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    #banner .banner_text a:hover {
+        border: 1px solid #18A7B9;
+    }
+    #banner .count .line {
+        display: none;
+    }
+    /* ================================ Banner Part End ================================  */
 
-    #all_issue .paginate .Page .pagination .page-item .page-link {
-        font-size: 10px;
+    /* ================================ Spnser Part Start ================================  */
+    #sponser {
+        padding: 70px 0;
     }
+    /* ================================ Sponser Part End ================================  */
 
-    #all_issue .issue_filter {
-        margin-bottom: 20px;
+    /* ================================ why_us Part Start ================================ */
+    #why_us {
+        padding: 15px 0;
     }
-    #all_issue .issue_filter_fix {
-        animation: none;
+    #why_us .us_right h3 {
+        font-size: 31px;
+        line-height: 44px;
     }
-    #issue_details .issue_details_content .title h4 {
-        font-size: 18px;
+    /* ================================ why_us Part End ================================  */
+
+    /* ================================ about_us Part Start ================================  */
+    #about_us {
+        padding: 30px 0 50px 0;
     }
-    #annoucements .accoucement_filter .input_group{
-        border-bottom: 1px solid rgba(51, 51, 51, 0.377);
+    #about_us .about_us_right {
+        padding-left: 13px;
+        padding-top: 50px;
     }
-    #annoucements .accoucement_filter .input_group span {
-        border: none;
+    #about_us .about_us_right ul li {
+        margin-bottom: 30px;
     }
-    #annoucements .accoucement_filter .input_group input {
-        border: none !important;
+    #about_us .about_us_right ul li .list_text p {
+        font-size: 14px;
+        padding-left: 45px;
     }
-    
-    /* #####################################################
-    #################### EDITORIAL PAGE END ###################
-    ##################################################### */
+    /* ================================ about_us Part End ================================  */
+
+    /* ================================ engineers Part Start ================================  */
+    #engineers .engineers_slider .port_prev {
+        left: 31%;
+    }
+    /* ================================ engineers Part End ================================  */
+
+    /* ================================ ceo Part Start ================================  */
+    #ceo {
+        padding: inherit;
+    }
+    #ceo .ceo_header h6 {
+        font-size: 30px;
+        line-height: inherit;
+        padding: 25px 0 15px 0;
+    }
+    #ceo .ceo_body p {
+        font-size: 14px;
+        padding: 0 0 40px 0px;
+        text-align: center;
+    }
+    #ceo .ceo_body .icon1,
+    #ceo .ceo_body .icon2 {
+        display: none;
+    }
+    /* ================================ ceo Part End ================================   */
+
+    /* ================================ Contact Part Start ================================ */
+    #contact_us .contact_form{
+        margin-bottom: 30px;
+    }
+    #blog {
+        padding-bottom: 20px;
+    }
+    /* ================================ Contact Part End ================================ */
+
+    /* ================================ subscribe part start ================================ */
+    #subscribe .subscribe_content h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    #subscribe .subscribe_content p {
+        font-size: 14px;
+        padding: 20px 20px;
+    }
+    /* ================================ subscribe part end ================================ */
+
+    /* ================================ Footer part start ================================ */
+    #footer .footer_main .footer_header h3 {
+        line-height: 0px;
+        text-align: center;
+    }
+    #footer .footer_main .footer_body p {
+        text-align: center;
+        padding-right: 0;
+    }
+    #footer .footer_main .footer_bottom ul {
+        padding-top: 20px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    #footer .footer_main .footer_header{
+        text-align: center;
+    }
+    #footer .footer_main .footer_header h5 {
+        padding-bottom: 15px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+    #footer .footer_main .footer_header h5::after {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 2px;
+        background: #313131;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #footer .footer_main .footer_body ul{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #footer .footer_main .footer_body ul li {
+        padding-bottom: 10px;
+    }
+    #footer .footer_main {
+        padding-bottom: 40px;
+    }
+    /* ================================ Footer part end ================================ */
+}
+
+@media(max-width:575.98px) {
+    /* ================================ Common Css ================================== */
+    .common_head {
+        padding-bottom: 40px;
+    }
+    .common_head h2 {
+        font-weight: 600;
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+    .common_head p {
+        font-size: 14px;
+        padding: 0px 20px;
+    }
+    .backtotop {
+        bottom: 15px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /* ================================ Fix Nav CSS ================================ */
+    .fix_nav .navbar-toggler.collapsed {
+        color: #fff !important;
+        margin-left: 10px;
+    }
+    .fix_nav .navbar-toggler {
+        color: #fff !important;
+        margin-left: 10px;
+    }
+    .fix_nav .navbar-toggler:focus {
+        border: 2px solid #fff !important;
+    }
+    .fix_nav .menu_part ul li a::after {
+        background: #313131;
+        bottom: 7px;
+    }
+    .fix_nav .menu_part ul li a {
+        color: #313131 !important;
+    }
+    .fix_nav .menu_part ul li a:hover {
+        color: #313131 !important;
+    }
+    .fix_nav .menu_part ul li a::after{
+        background: #313131 !important;
+    }
+    .fix_nav .menu_part ul li a.active {
+        color: #fff !important;
+    }
+    .fix_nav .menu_part ul li a.active::after {
+        background: #fff !important;
+    }
+    /* ================================ FIx Nav CSS ================================ */
+    #main_menu .navbar-toggler.collapsed {
+        color: #fff;
+        margin-left: 10px;
+    }
+    #main_menu .navbar-toggler {
+        color: #18A7B9;
+        margin-left: 10px;
+    }
+    #main_menu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    #main_menu .menu_part {
+        text-align: center;
+        background: #fff;
+        margin-top: 30px;
+        position: relative;
+    }
+    #main_menu .menu_part::after {
+        position: absolute;
+        content: "";
+        top: -40px;
+        left: 15px;
+        border-bottom: 20px solid #fff;
+        border-top: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+    #main_menu .menu_part ul li a{
+        margin: 0 0 0 0;
+    }
+    #main_menu .menu_part ul li a{
+        padding: 10px 0;
+    }
+    #main_menu .menu_part ul li a.active {
+        background: #18A7B9;
+        color: #fff;
+        padding: 10px 0;
+    }
+    #main_menu .menu_part ul li a::after {
+        background: #313131;
+        bottom: 7px;
+    }
+    #main_menu .menu_part ul li a.active::after {
+        background: #fff;
+        bottom: 7px;
+    }
+    #main_menu .logo a {
+        margin-right: 20px;
+        color: #fff;
+    }
+    /* ================================ Menu Part End ================================  */
+
+    /* ================================ Banner Part Start ================================ */
+    #banner {
+        padding-top: 10px;
+    }
+    #banner .banner_text h1 {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 50px;
+    }
+    #banner .banner_text p {
+        text-align: center;
+        color: #fff;
+    }
+    #banner .count {
+        display: block;
+        padding-top: 50px;
+        text-align: center;
+    }
+    #banner .count .count_item {
+    margin-bottom: 10px;
+    }
+    #banner .count .count_item .ovrly {
+        left: 60px;
+    }
+    #banner_image .banner_img img {
+        border-radius: 0 0 0 0;
+    }
+    #banner_image .banner_img::after {
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 0 0 0 0;
+    }
+    #banner_image {
+        right: inherit;
+    }
+    #banner_image .banner_img::before {
+        display: none;
+    }
+    #banner .banner_text {
+        text-align: center;
+    }
+    #banner .banner_text h1 span {
+        color: #fff;
+    }
+    #banner .count .count_item span h6{
+        color: #fff;
+    }
+    #banner .count .count_item span {
+        color: #fff !important;
+    }
+    #banner .count .count_item p {
+        color: #fff !important;
+    }
+    #banner .banner_text a {
+        width: 138px;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    #banner .banner_text a:hover {
+        border: 1px solid #18A7B9;
+    }
+    #banner .count .line {
+        display: none;
+    }
+    /* ================================ Banner Part End ================================  */
+
+    /* ================================ Spnser Part Start ================================  */
+    #sponser {
+        padding: 70px 0;
+    }
+    /* ================================ Sponser Part End ================================  */
+
+    /* ================================ why_us Part Start ================================ */
+    #why_us {
+        padding: 15px 0;
+    }
+    #why_us .us_right h3 {
+        font-size: 31px;
+        line-height: 44px;
+    }
+    /* ================================ why_us Part End ================================  */
+
+    /* ================================ about_us Part Start ================================  */
+    #about_us {
+        padding: 30px 0 50px 0;
+    }
+    #about_us .about_us_right {
+        padding-left: 13px;
+        padding-top: 50px;
+    }
+    #about_us .about_us_right ul li {
+        margin-bottom: 30px;
+    }
+    #about_us .about_us_right ul li .list_text p {
+        font-size: 14px;
+        padding-left: 45px;
+    }
+    /* ================================ about_us Part End ================================  */
+
+    /* ================================ engineers Part Start ================================  */
+    #engineers .engineers_slider .port_prev {
+        left: 31%;
+    }
+    /* ================================ engineers Part End ================================  */
+
+    /* ================================ ceo Part Start ================================  */
+    #ceo {
+        padding: inherit;
+    }
+    #ceo .ceo_header h6 {
+        font-size: 30px;
+        line-height: inherit;
+        padding: 25px 0 15px 0;
+    }
+    #ceo .ceo_body p {
+        font-size: 14px;
+        padding: 0 0 40px 0px;
+        text-align: center;
+    }
+    #ceo .ceo_body .icon1,
+    #ceo .ceo_body .icon2 {
+        display: none;
+    }
+    /* ================================ ceo Part End ================================   */
+
+    /* ================================ Contact Part Start ================================ */
+    #contact_us .contact_form{
+        margin-bottom: 30px;
+    }
+    #blog {
+        padding-bottom: 20px;
+    }
+    /* ================================ Contact Part End ================================ */
+
+    /* ================================ subscribe part start ================================ */
+    #subscribe .subscribe_content h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    #subscribe .subscribe_content p {
+        font-size: 14px;
+        padding: 20px 20px;
+    }
+    /* ================================ subscribe part end ================================ */
+
+    /* ================================ Footer part start ================================ */
+    #footer .footer_main .footer_header h3 {
+        line-height: 0px;
+        text-align: center;
+    }
+    #footer .footer_main .footer_body p {
+        text-align: center;
+        padding-right: 0;
+    }
+    #footer .footer_main .footer_bottom ul {
+        padding-top: 20px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    #footer .footer_main .footer_header{
+        text-align: center;
+    }
+    #footer .footer_main .footer_header h5 {
+        padding-bottom: 15px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+    #footer .footer_main .footer_header h5::after {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 2px;
+        background: #313131;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #footer .footer_main .footer_body ul{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #footer .footer_main .footer_body ul li {
+        padding-bottom: 10px;
+    }
+    #footer .footer_main {
+        padding-bottom: 40px;
+    }
+    /* ================================ Footer part end ================================ */
 }

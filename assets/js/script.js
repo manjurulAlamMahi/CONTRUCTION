@@ -1,6 +1,11 @@
 $(function () {
   'use strict';
 
+  $('.countup').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
   // Menu fix
 
   var navtop = $('#main_menu').offset().top;
@@ -58,6 +63,43 @@ $(function () {
       slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
+      responsive: [
+        {
+          breakpoint: 575.98,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767.98,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767.98,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991.98,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1401,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+          }
+        },
+      ]
   });
 
   $('.engineers_slider').slick({
@@ -68,6 +110,29 @@ $(function () {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: false,
+      responsive: [
+        {
+          breakpoint: 575.98,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767.98,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991.98,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+      ]
   });
 
   // Nice Scroll 
@@ -77,6 +142,8 @@ $(function () {
     cursorcolor:"#18A7B9",
     boxzoom:true
   });
+
+  
   
 
 });

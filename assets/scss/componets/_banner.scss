@@ -39,10 +39,15 @@
         position: relative;
         .count_item{
             position: relative;
-            h6{
-                @include text(40px, 500, #313131);
-            }
             span{
+                @include text(40px, 500, #313131);
+                display: inline-block;
+                h6{
+                    display: inline-block;
+                    @include text(40px, 500, #313131);
+                }
+            }
+            p{
                 @include text(20px, 400, #6B6B6B);
             }
             z-index: 1;
@@ -69,7 +74,7 @@
 #banner_image{
     position: absolute;
     top: 0;
-    right: 12px;
+    right: 0;
     z-index: -1;
     .banner_img{
         img{

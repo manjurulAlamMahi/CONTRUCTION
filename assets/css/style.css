@@ -288,12 +288,19 @@ body {
   position: relative;
   z-index: 1;
 }
-#banner .count .count_item h6 {
+#banner .count .count_item span {
+  font-size: 40px;
+  font-weight: 500;
+  color: #313131;
+  display: inline-block;
+}
+#banner .count .count_item span h6 {
+  display: inline-block;
   font-size: 40px;
   font-weight: 500;
   color: #313131;
 }
-#banner .count .count_item span {
+#banner .count .count_item p {
   font-size: 20px;
   font-weight: 400;
   color: #6B6B6B;
@@ -318,7 +325,7 @@ body {
 #banner_image {
   position: absolute;
   top: 0;
-  right: 12px;
+  right: 0;
   z-index: -1;
 }
 #banner_image .banner_img img {
